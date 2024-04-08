@@ -1,0 +1,119 @@
+/* popup.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Reset some default styles */
+
+body {
+  width: 500px;
+  height: 488px;
+}
+
+body, h1, p, button {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style the container */
+  /* Style the container */
+.container {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(253deg, #3498db, #9b59b6); /* Gradient background */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 20px;
+  animation: slideIn 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 40px;
+  flex-direction: column;
+}
+
+  
+  /* Style the header */
+  h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Style the category buttons */
+  .categories {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Style the content area */
+  .content {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+    min-height: 250px;
+    width: 80%;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+    animation: fadeIn 0.5s ease;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .content p {
+    text-align: justify;
+  }
+  
+  /* Add animation to content area */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* Slide-in animation for the container */
+  @keyframes slideIn {
+    from {
+      transform: translateY(-100px);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Style the "Fetching" text */
+  #content-text {
+    color: #555;
+    font-style: italic;
+  }
+  
+  /* Style the button when clicked */
+  button:active {
+    transform: translateY(2px);
+  }

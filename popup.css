@@ -1,0 +1,52 @@
+/* Reset some default styles for the list and anchors */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 500px;
+    background-color: #cae5e3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Styling the menu */
+.menu {
+    background-color: #5e817f;
+    font-family: Arial, sans-serif;
+    padding: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #f9f3f3;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+    background-color: #222;
+    padding: 10px 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.menu a:hover {
+    color: #ad977a;
+    /* Change color on hover */
+}
+
+.h1 {
+    margin-top: 20px;
+}

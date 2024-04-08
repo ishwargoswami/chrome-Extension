@@ -1,0 +1,62 @@
+/* remider.css */
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #9ccabc; /* Light gray background color */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px; /* 100% of viewport height */
+    width: 500px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+input[type="text"],
+input[type="datetime-local"],
+button {
+    padding: 10px;
+    margin: 5px;
+    width: 80%;
+    max-width: 300px;
+    box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+#set-reminder {
+    background-color: #0073e6;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Add transition for background-color and transform */
+    margin-top: 10px;
+}
+
+#set-reminder:hover {
+    background-color: #005bbf; /* Change background color on hover */
+    transform: scale(1.05); /* Add scale animation on hover */
+}
+
+.status {
+    margin-top: 20px;
+    color: #0073e6;
+    font-weight: bold;
+}
+
+@media (max-width: 400px) {
+    input[type="text"],
+    input[type="datetime-local"],
+    button {
+        width: 100%;
+        max-width: none;
+    }
+}
